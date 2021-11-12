@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box ;
+    -webkit-box-sizing:border-box ;
+}
+.flag1, .flag2{
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    display: block;
+}
+.flag1 .red{
+    width: 100%;
+    height:calc(100% / 3);
+    background-color: red;
+}
+.flag1 .white{
+    width: 100%;
+    height:calc(100% / 3);
+    background-color: white;
+}
+.flag1 .black{
+    width: 100%;
+    height:calc(100% / 3);
+    background-color: black;
+}
+.flag1::after {
+    content: "";
+    background-image: url(eagle.jpg);
+    background-size: cover;
+    width: 50px;
+    height: calc(99% / 3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.flag2 .green{
+    width: 100%;
+    height:calc(100% / 3);
+    background-color: #009e00;
+}
+.flag2 .white{
+    width: 100%;
+    height:calc(100% / 3);
+    background-color: white;
+}
+.flag2 .black{
+    width: 100%;
+    height:calc(100% / 3);
+    background-color: black;
+}
+.flag2 .red {
+    width:200px;
+    height:300px;
+    background-color: red;
+    position: absolute;
+    left: -36%;
+    top: 9%;
+    transform: scaleX(1.4) rotate(45deg);
+}
